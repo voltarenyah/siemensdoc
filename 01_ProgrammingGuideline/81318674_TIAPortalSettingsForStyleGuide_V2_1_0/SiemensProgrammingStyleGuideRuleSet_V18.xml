@@ -1,0 +1,872 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<!--exported by  'TIA Portal Test Suite Advanced' Version  18.00.00.00     © 2022  Siemens AG  - all rights reserved-->
+<RuleSets Version='18.00.00.00'>
+  <RuleSet Name='SiemensProgrammingStyleGuide'>
+    <Property>
+      <PropertyAttribute Name='Author' Value='SiemensAG' />
+      <PropertyAttribute Name='Version' Value='2.1' />
+      <PropertyAttribute Name='Comment' Value='The basis for this rule set is the Version 2.0 of "Programming style guide for SIMATIC S7-1200/ S7-1500" (https://support.industry.siemens.com/cs/ww/de/view/81318674)' />
+    </Property>
+    <Rules>
+      <Rule Name='NF002: Comment for Code block' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB_FC_OB' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Comment and property fields shall be used and filled with meaningful information.' />
+        <RuleAttribute Name='Property' Value='Comment' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Comment for PLC data type' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Comment and property fields shall be used and filled with meaningful information.' />
+        <RuleAttribute Name='Property' Value='Comment' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Comment for Global DB' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Comment and property fields shall be used and filled with meaningful information.' />
+        <RuleAttribute Name='Property' Value='Comment' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Comment for Instance DB' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='InstanceDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Comment and property fields shall be used and filled with meaningful comments and information. Please refer to the programming style guide: https://support.industry.siemens.com/cs/ww/en/view/81318674' />
+        <RuleAttribute Name='Property' Value='Comment' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Comment for In, Out, InOut' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Input_Output_InOut' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Comment and property fields shall be used and filled with meaningful comments and information. Please refer to the programming style guide: https://support.industry.siemens.com/cs/ww/en/view/81318674' />
+        <RuleAttribute Name='Property' Value='Comment' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Comment for Temp' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Input_Output_InOut' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Comment and property fields shall be used and filled with meaningful comments and information. Please refer to the programming style guide: https://support.industry.siemens.com/cs/ww/en/view/81318674' />
+        <RuleAttribute Name='Property' Value='Comment' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Comment for Static' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Static' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Comment and property fields shall be used and filled with meaningful comments and information. Please refer to the programming style guide: https://support.industry.siemens.com/cs/ww/en/view/81318674' />
+        <RuleAttribute Name='Property' Value='Comment' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Comment for Global DB Member' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock_Static' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Comment and property fields shall be used and filled with meaningful comments and information. Please refer to the programming style guide: https://support.industry.siemens.com/cs/ww/en/view/81318674' />
+        <RuleAttribute Name='Property' Value='Comment' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Comment for Constant' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Input_Output_InOut' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Comment and property fields shall be used and filled with meaningful comments and information. Please refer to the programming style guide: https://support.industry.siemens.com/cs/ww/en/view/81318674' />
+        <RuleAttribute Name='Property' Value='Comment' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Title for Code block' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB_FC_OB' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Comment and property fields shall be used and filled with meaningful information.' />
+        <RuleAttribute Name='Property' Value='Title' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Title for PLC data type' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Comment and property fields shall be used and filled with meaningful information.' />
+        <RuleAttribute Name='Property' Value='Title' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Title for Global DB' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Comment and property fields shall be used and filled with meaningful information.' />
+        <RuleAttribute Name='Property' Value='Title' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Title for Instance DB' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='InstanceDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Comment and property fields shall be used and filled with meaningful information.' />
+        <RuleAttribute Name='Property' Value='Title' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Author for Code block' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB_FC_OB' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Comment and property fields shall be used and filled with meaningful information.' />
+        <RuleAttribute Name='Property' Value='Author' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF002: Author for Global DB' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Comment and property fields shall be used and filled with meaningful information.' />
+        <RuleAttribute Name='Property' Value='Author' />
+        <RuleAttribute Name='ViolationCondition' Value='NotExist' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='NF004: Library prefix "L&lt;Name&gt;_" for Code block' Type='PrefixSuffixRule' Enabled='False'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB_FC_OB' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The identifier of a library starts with the prefix L. All types and master copies contained in the library get the identifier of the library.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='L&lt;Name&gt;_' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+        <AdditionalProperties>
+          <AdditionalProperty Name='BlockType'>
+            <AdditionalPropertyAttribute Name='Operator' Value='IsEqual' />
+            <AdditionalPropertyAttribute Name='Value' Value='LibraryType' />
+          </AdditionalProperty>
+        </AdditionalProperties>
+      </Rule>
+      <Rule Name='NF004: Library prefix "L&lt;Name&gt;_" for PLC data type' Type='PrefixSuffixRule' Enabled='False'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The identifier of a library starts with the prefix L. All types and master copies contained in the library get the identifier of the library.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='L&lt;Name&gt;_' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+        <AdditionalProperties>
+          <AdditionalProperty Name='BlockType'>
+            <AdditionalPropertyAttribute Name='Operator' Value='IsEqual' />
+            <AdditionalPropertyAttribute Name='Value' Value='LibraryType' />
+          </AdditionalProperty>
+        </AdditionalProperties>
+      </Rule>
+      <Rule Name='NF005: Use UpperCamelCasing for Instance DB' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='InstanceDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for Instance DBs are written using UpperCamelCasing.' />
+        <RuleAttribute Name='Casing' Value='PascalCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF005: Use UpperCamelCasing for Code block' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB_FC_OB' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for Code block are written using UpperCamelCasing.' />
+        <RuleAttribute Name='Casing' Value='PascalCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <AdditionalProperties>
+          <AdditionalProperty Name='BlockType'>
+            <AdditionalPropertyAttribute Name='Operator' Value='IsNotEqual' />
+            <AdditionalPropertyAttribute Name='Value' Value='LibraryType' />
+          </AdditionalProperty>
+        </AdditionalProperties>
+      </Rule>
+      <Rule Name='NF005: Use UpperCamelCasing for Global DB' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for Global DBs are written using UpperCamelCasing.' />
+        <RuleAttribute Name='Casing' Value='PascalCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF005: Use UpperCamelCasing for PLC tag table' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCTagTable' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for PLC tag tables are written using UpperCamelCasing.  ' />
+        <RuleAttribute Name='Casing' Value='PascalCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF006: lowerCamelCasing for PLC data type' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for PLC data types are written using lowerCamelCasing.' />
+        <RuleAttribute Name='Casing' Value='CamelCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <AdditionalProperties>
+          <AdditionalProperty Name='BlockType'>
+            <AdditionalPropertyAttribute Name='Operator' Value='IsNotEqual' />
+            <AdditionalPropertyAttribute Name='Value' Value='LibraryType' />
+          </AdditionalProperty>
+        </AdditionalProperties>
+      </Rule>
+      <Rule Name='NF006: lowerCamelCasing for Data type member' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType_Member' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for code elements are written using lowerCamelCasing.' />
+        <RuleAttribute Name='Casing' Value='CamelCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF006: lowerCamelCasing for Global DB member' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock_Static' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for code elements are written using lowerCamelCasing.' />
+        <RuleAttribute Name='Casing' Value='CamelCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF006: lowerCamelCasing for In, Out, InOut' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Input_Output_InOut' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for parameters are written using lowerCamelCasing.' />
+        <RuleAttribute Name='Casing' Value='CamelCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF006: lowerCamelCasing for Static' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Static' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for variables are written using lowerCamelCasing.' />
+        <RuleAttribute Name='Casing' Value='CamelCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF006: lowerCamelCasing for PLC tag' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCTagTable_Tags' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for PLC tags are written using lowerCamelCasing.' />
+        <RuleAttribute Name='Casing' Value='CamelCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF006: lowerCamelCasing for Temp' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Temp' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Identifiers for variables are written using lowerCamelCasing.' />
+        <RuleAttribute Name='Casing' Value='CamelCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF007.1: No prefix for Input' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Input' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Formal parameters of blocks are used without prefixes.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsEqual' />
+        <RuleAttribute Name='Value' Value='in' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.1: No prefix for Output' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Output' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Formal parameters of blocks are used without prefixes.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsEqual' />
+        <RuleAttribute Name='Value' Value='out' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.2: No prefix for InOut' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_InOut' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Formal parameters of blocks are used without prefixes.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsEqual' />
+        <RuleAttribute Name='Value' Value='inOut' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.3: No prefix for Constant' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Constant' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: User constants do not get a prefix because UPPER_CASING already identifies them as constants.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsEqual' />
+        <RuleAttribute Name='Value' Value='CONST' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.3: No prefix for PLC tag table user constant' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCTagTable_Constants' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: User constants do not get a prefix because UPPER_CASING already identifies them as constants.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsEqual' />
+        <RuleAttribute Name='Value' Value='CONST' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.5: Prefix for Temp' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Temp' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Temporary variables carry the prefix "temp". This measure makes it easier for the programmer to distinguish between formal parameters and local data.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='temp' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.6: Prefix for Static' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Static' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Static variables, excluding multi-instances, carry a prefix "stat" (e.g. statState).' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='stat' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.6: No prefix for Global DB member' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock_Static' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Neither global DBs nor the contained elements get a prefix.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsEqual' />
+        <RuleAttribute Name='Value' Value='stat' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.8: Prefix for parameter instance' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_InOut' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Parameter instances carry a prefix "inst" (e.g. instSensor). The prefixes make it easier to see if instance data has been accessed (illegally).' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='inst' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.8: Prefix for parameter instance array' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_InOut' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Parameter instances carry a prefix "inst" (e.g. instSensors). The prefixes make it easier to see if instance data has been accessed (illegally).' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='inst' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.8: Prefix for multi instance' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Static' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Multi-instances carry a prefix "inst" (e.g. instSensor). The prefixes make it easier to see if instance data has been accessed (illegally).' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='inst' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.8: Prefix for multi instance array' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Static' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Multi instances carry a prefix "inst" (e.g. instSensors). The prefixes make it easier to see if instance data has been accessed (illegally).' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='inst' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.9: No prefix for Global DB' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Neither global DBs nor the contained elements get a prefix.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsEqual' />
+        <RuleAttribute Name='Value' Value='Inst' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.9: Prefix for Instance DB' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='InstanceDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: Single instances DBs get the prefix “Inst” (e.g. InstConveyorFeed). The prefixes make it easier to see if instance data has been accessed (illegally).' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='Inst' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.10: No prefix for PLC data type member' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType_Member' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: The individual elements inside a PLC data type do not get a prefix. ' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsEqual' />
+        <RuleAttribute Name='Value' Value='type' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+      </Rule>
+      <Rule Name='NF007.10: Prefix for PLC data type' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: A PLC data type gets the prefix “type” (e.g. typeDiagnostics). The individual elements inside the PLC data type do not get a prefix. ' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='type' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+        <AdditionalProperties>
+          <AdditionalProperty Name='BlockType'>
+            <AdditionalPropertyAttribute Name='Operator' Value='IsNotEqual' />
+            <AdditionalPropertyAttribute Name='Value' Value='LibraryType' />
+          </AdditionalProperty>
+        </AdditionalProperties>
+      </Rule>
+      <Rule Name='NF007.12: Prefix for PLC data type in Library "L&lt;Name&gt;_type"' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Rule: A PLC data type in the library gets the prefix “L&lt;Name&gt;_type” (e.g. LBC_typeDiagnostics). The individual elements inside the PLC data type do not get a prefix. ' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotEqual' />
+        <RuleAttribute Name='Value' Value='L&lt;Name&gt;_type' />
+        <RuleAttribute Name='MatchType' Value='CaseSensitive' />
+        <AdditionalProperties>
+          <AdditionalProperty Name='BlockType'>
+            <AdditionalPropertyAttribute Name='Operator' Value='IsEqual' />
+            <AdditionalPropertyAttribute Name='Value' Value='LibraryType' />
+          </AdditionalProperty>
+        </AdditionalProperties>
+      </Rule>
+      <Rule Name='NF008: UPPER_CASING for Constant' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Constant' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The names for local constants are written completely with capital letters (UPPER_CASING). An underscore shall be used for seperation of words.' />
+        <RuleAttribute Name='Casing' Value='UpperCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF008: UPPER_CASING for PLC Tag table user constant' Type='CasingRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCTagTable_Constants' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The names for global user constants are written completely with capital letters (UPPER_CASING). An underscore shall be used for seperation of words.' />
+        <RuleAttribute Name='Casing' Value='UpperCasing' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers Code block' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB_FC_OB' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers Constant' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Constant' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers Global DB' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers Global DB member' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock_Static' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers In, Out, InOut' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Input_Output_InOut' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers Instance DB' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='InstanceDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers PLC data type' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers PLC data type member' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType_Member' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers PLC tag' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCTagTable_Tags' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers PLC tag table' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCTagTable' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers PLC tag table user constant' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCTagTable_Constants' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers Static' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Static' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF009: No special char (@) for identifiers Temp' Type='NameContainsRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Temp' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='Contains' />
+        <RuleAttribute Name='Value' Value='@' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for Code block' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB_FC_OB' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for Constant' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Constant' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for PLC data type' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for PLC data type member' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCDataType_Member' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for Global DB' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for Global DB member' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock_Static' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for In, Out, InOut' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Input_Output_InOut' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for Instance DB' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='InstanceDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for Static' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Static' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for PLC tag' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCTagTable_Tags' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for PLC tag table' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCTagTable' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for PLC tag table user constant' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='PLCTagTable_Constants' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='NF010: Maximum length identifier for Temp' Type='NameLengthRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Temp' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='The overall length of an identifier incl. prefix, suffix or library identifier shall not exceed 24 characters.' />
+        <RuleAttribute Name='ViolationCondition' Value='GreaterThan' />
+        <RuleAttribute Name='Value' Value='24' />
+      </Rule>
+      <Rule Name='SE003: Automatic ENO for Code block' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB_FC_OB' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The use of the EN/ ENO mechanism avoids unexpected program interruptions. The block status is passed on in the format of a Boolean variable. Please note: Safety blocks will throw the error even if ENO is not allowed.' />
+        <RuleAttribute Name='Property' Value='SetENOAutomatically' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='SE004.2: HMI/ OPC UA/ Web API writability is set selectively for Output' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Input_Output_InOut' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Per default the access to formal parameters per HMI/ OPC UA/ Web API shall be disabled. Enable it selectively.' />
+        <RuleAttribute Name='Property' Value='WritableFromHMIOPCUA' />
+        <RuleAttribute Name='ViolationCondition' Value='IsSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='SE004.5: HMI/ OPC UA/ Web API accessibility is set for Static' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Static' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The access to static variables of a FB is not permitted. Formal paramters for read or write access must be created.' />
+        <RuleAttribute Name='Property' Value='AccessibleFromHMIOPCUA' />
+        <RuleAttribute Name='ViolationCondition' Value='IsSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='SE004.5: HMI/ OPC UA/ Web API visiblity is set for Static' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Static' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The access to static variables of a FB is not permitted. Formal paramters for read or write access must be created.' />
+        <RuleAttribute Name='Property' Value='VisibleinHMIEngineering' />
+        <RuleAttribute Name='ViolationCondition' Value='IsSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='SE004.5: HMI/ OPC UA/ Web API writability is set for Static' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Static' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='The access to static variables of a FB is not permitted. Formal paramters for read or write access must be created.' />
+        <RuleAttribute Name='Property' Value='WritableFromHMIOPCUA' />
+        <RuleAttribute Name='ViolationCondition' Value='IsSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='SE004.8: HMI/ OPC UA/ Web API accessibility is set for Global DB member' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock_Static' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Per default the access to data block members per HMI/ OPC UA/ Web API shall be disabled. Enable it selectively.' />
+        <RuleAttribute Name='Property' Value='AccessibleFromHMIOPCUA' />
+        <RuleAttribute Name='ViolationCondition' Value='IsSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='SE004.8: HMI/ OPC UA/ Web API visiblity is set for Global DB member' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock_Static' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Per default the access to data block members per HMI/ OPC UA/ Web API shall be disabled. Enable it selectively.' />
+        <RuleAttribute Name='Property' Value='VisibleinHMIEngineering' />
+        <RuleAttribute Name='ViolationCondition' Value='IsSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='SE004.8: HMI/ OPC UA/ Web API writability is set for Global DB member' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock_Static' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Per default the access to data block members per HMI/ OPC UA/ Web API shall be disabled. Enable it selectively.' />
+        <RuleAttribute Name='Property' Value='WritableFromHMIOPCUA' />
+        <RuleAttribute Name='ViolationCondition' Value='IsSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='DA003.1: Auto numbering for Function' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FC' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Blocks (FC, FB, DB, TO) shall only be delivered with auto numbering turned on. Be aware that the execution of an Organization blocks depends on its number/ priority.' />
+        <RuleAttribute Name='Property' Value='AutomaticNumbering' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='DA003.1: Auto numbering for Function Block' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Blocks (FC, FB, DB, TO) shall only be delivered with auto numbering turned on. Be aware that the execution of an Organization blocks depends on its number/ priority.' />
+        <RuleAttribute Name='Property' Value='AutomaticNumbering' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='DA003.1: OB numbering' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_OB' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='OB number need to be adjusted for call sequence ' />
+        <RuleAttribute Name='Property' Value='AutomaticNumbering' />
+        <RuleAttribute Name='ViolationCondition' Value='IsSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='DA003.1: Auto numbering for Global DB' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Blocks (OB, FC, FB, DB, TO) shall only be delivered with auto numbering turned on. Be aware that the execution of an Organization blocks depends on its number/ priority.' />
+        <RuleAttribute Name='Property' Value='AutomaticNumbering' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='DA003.1: Auto numbering for Instance DB' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='InstanceDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='Blocks (OB, FC, FB, DB, TO) shall only be delivered with auto numbering turned on. Be aware that the execution of an Organization blocks depends on its number/ priority.' />
+        <RuleAttribute Name='Property' Value='AutomaticNumbering' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='DA003.2: IEC check for Code block' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB_FC_OB' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='To ensure the IEC conformant programming, the IEC check must be turned on. Only this way a type conformant and type safe programming can be ensured.' />
+        <RuleAttribute Name='Property' Value='IECCheck' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='DA003.3: Optimized access for Code block' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_FB_FC_OB' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='For full symbolic programming and the maximum performance, the optimized access to blocks must be activated.' />
+        <RuleAttribute Name='Property' Value='OptimizedBlockAccess' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='DA003.3: Optimized access for Global DB' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='GlobalDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='For full symbolic programming and the maximum performance, the optimized access to blocks must be activated.' />
+        <RuleAttribute Name='Property' Value='OptimizedBlockAccess' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='DA003.3: Optimized access for Instance DB' Type='MetaDataRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='InstanceDataBlock' />
+        <RuleAttribute Name='Target' Value='TargetProperty' />
+        <RuleAttribute Name='Category' Value='Error' />
+        <RuleAttribute Name='Comment' Value='For full symbolic programming and the maximum performance, the optimized access to blocks must be activated.' />
+        <RuleAttribute Name='Property' Value='OptimizedBlockAccess' />
+        <RuleAttribute Name='ViolationCondition' Value='IsNotSet' />
+        <RuleAttribute Name='Value' Value='' />
+      </Rule>
+      <Rule Name='PE004: Avoid formal parameter "Variant"' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Input_Output_InOut' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='This prevents code fragments that are not are needed (“dead code”), since the mode parameter is usually connected statically. Instead, you should distribute the functionalities to individual modules.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsEqual' />
+        <RuleAttribute Name='Value' Value='Variant' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+      <Rule Name='PE005: Avoid formal parameter "mode"' Type='PrefixSuffixRule' Enabled='True'>
+        <RuleAttribute Name='ObjectSelector' Value='CodeBlock_Interface_Input_Output_InOut' />
+        <RuleAttribute Name='Target' Value='TargetName' />
+        <RuleAttribute Name='Category' Value='Warning' />
+        <RuleAttribute Name='Comment' Value='This prevents code fragments that are not are needed (“dead code”), since the mode parameter is usually connected statically. Instead, you should distribute the functionalities to individual modules.' />
+        <RuleAttribute Name='Context' Value='StartsWith' />
+        <RuleAttribute Name='ViolationCondition' Value='IsEqual' />
+        <RuleAttribute Name='Value' Value='mode' />
+        <RuleAttribute Name='MatchType' Value='CaseInsensitive' />
+      </Rule>
+    </Rules>
+  </RuleSet>
+</RuleSets>
